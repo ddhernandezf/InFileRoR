@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>State:</strong>
+  <%= @invoice_header.State %>
+</p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @invoice_header.Customer %>
+</p>
+
+<p>
+  <strong>Invoicedatetime:</strong>
+  <%= @invoice_header.InvoiceDateTime %>
+</p>
+
+<%= link_to 'Edit', edit_invoice_header_path(@invoice_header) %> |
+<%= link_to 'Back', invoice_headers_path %>

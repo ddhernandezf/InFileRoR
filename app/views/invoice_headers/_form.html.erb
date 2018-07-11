@@ -1,0 +1,32 @@
+<%= form_with(model: invoice_header, local: true) do |form| %>
+  <% if invoice_header.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(invoice_header.errors.count, "error") %> prohibited this invoice_header from being saved:</h2>
+
+      <ul>
+      <% invoice_header.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :State %>
+    <%= form.number_field :State %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Customer %>
+    <%= form.text_field :Customer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :InvoiceDateTime %>
+    <%= form.datetime_select :InvoiceDateTime %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

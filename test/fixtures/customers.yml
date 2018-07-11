@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  TaxNumber: MyString
+  Firstname: MyString
+  Lastname: MyString
+  Address: MyString
+
+two:
+  TaxNumber: MyString
+  Firstname: MyString
+  Lastname: MyString
+  Address: MyString

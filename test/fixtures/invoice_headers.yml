@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  State: 1
+  Customer: MyString
+  InvoiceDateTime: 2018-07-11 17:29:54
+
+two:
+  State: 1
+  Customer: MyString
+  InvoiceDateTime: 2018-07-11 17:29:54

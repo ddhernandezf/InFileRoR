@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Invoice Headers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>State</th>
+      <th>Customer</th>
+      <th>Invoicedatetime</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @invoice_headers.each do |invoice_header| %>
+      <tr>
+        <td><%= invoice_header.State %></td>
+        <td><%= invoice_header.Customer %></td>
+        <td><%= invoice_header.InvoiceDateTime %></td>
+        <td><%= link_to 'Show', invoice_header %></td>
+        <td><%= link_to 'Edit', edit_invoice_header_path(invoice_header) %></td>
+        <td><%= link_to 'Destroy', invoice_header, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Invoice Header', new_invoice_header_path %>
